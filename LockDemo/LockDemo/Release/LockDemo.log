@@ -1,0 +1,64 @@
+﻿生成启动时间为 2020/5/7 9:49:43。
+     1>项目“C:\MyWork\WorkSpace\VisualStudio\LockDemo\LockDemo\LockDemo\LockDemo.vcxproj”在节点 2 上(Rebuild 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\opencv\build\include\opencv2 /IC:\opencv\build\include\opencv /IC:\opencv\build\include /IC:\MyWork\WorkSpace\VisualStudio\LockDemo\LockDemo\usblib\include /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"Release\LockDemo.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt stdafx.cpp
+         stdafx.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\opencv\build\include\opencv2 /IC:\opencv\build\include\opencv /IC:\opencv\build\include /IC:\MyWork\WorkSpace\VisualStudio\LockDemo\LockDemo\usblib\include /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt common.cpp packet.cpp pic_deal.cpp
+         common.cpp
+         packet.cpp
+     1>c:\mywork\workspace\visualstudio\lockdemo\lockdemo\lockdemo\packet.h(15): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>c:\mywork\workspace\visualstudio\lockdemo\lockdemo\lockdemo\packet.h(22): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>c:\mywork\workspace\visualstudio\lockdemo\lockdemo\lockdemo\packet.h(31): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>C:\opencv\build\include\opencv2/core/mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\opencv\build\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\opencv\build\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>packet.cpp(28): warning C4018: “<”: 有符号/无符号不匹配
+     1>packet.cpp(46): warning C4101: “packet”: 未引用的局部变量
+         pic_deal.cpp
+     1>C:\opencv\build\include\opencv2/core/mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\opencv\build\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\opencv\build\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\mywork\workspace\visualstudio\lockdemo\lockdemo\lockdemo\packet.h(15): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>c:\mywork\workspace\visualstudio\lockdemo\lockdemo\lockdemo\packet.h(22): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>c:\mywork\workspace\visualstudio\lockdemo\lockdemo\lockdemo\packet.h(31): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>pic_deal.cpp(9): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+     1>pic_deal.cpp(10): warning C4244: “初始化”: 从“float”转换到“int”，可能丢失数据
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /IC:\opencv\build\include\opencv2 /IC:\opencv\build\include\opencv /IC:\opencv\build\include /IC:\MyWork\WorkSpace\VisualStudio\LockDemo\LockDemo\usblib\include /Zi /nologo /W3 /WX- /sdl /O2 /Oi /Oy- /GL /D WIN32 /D _WINDOWS /D NDEBUG /D _UNICODE /D UNICODE /Gm- /EHsc /MT /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"Release\LockDemo.pch" /Fo"Release\\" /Fd"Release\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt LockDemo.cpp LockDemoDlg.cpp usb.cpp
+         LockDemo.cpp
+         LockDemoDlg.cpp
+     1>C:\opencv\build\include\opencv2/core/mat.hpp(1965): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\opencv\build\include\opencv2/core/persistence.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>C:\opencv\build\include\opencv2/core/utility.hpp : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+     1>c:\mywork\workspace\visualstudio\lockdemo\lockdemo\lockdemo\packet.h(15): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>c:\mywork\workspace\visualstudio\lockdemo\lockdemo\lockdemo\packet.h(22): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>c:\mywork\workspace\visualstudio\lockdemo\lockdemo\lockdemo\packet.h(31): warning C4200: 使用了非标准扩展 : 结构/联合中的零大小数组
+                 当 UDT 包含大小为零的数组时，无法生成复制构造函数或副本赋值运算符
+     1>LockDemoDlg.cpp(423): warning C4244: “参数”: 从“float”转换到“int”，可能丢失数据
+         usb.cpp
+       ResourceCompile:
+         C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D NDEBUG /D _UNICODE /D UNICODE /l"0x0804" /IRelease\ /nologo /fo"Release\LockDemo.res" LockDemo.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\MyWork\WorkSpace\VisualStudio\LockDemo\LockDemo\Release\LockDemo.exe" /INCREMENTAL:NO /NOLOGO /LIBPATH:C:\opencv\build\x86\vc12\staticlib /LIBPATH:C:\MyWork\WorkSpace\VisualStudio\LockDemo\LockDemo\usblib uafxcw.lib LIBCMT.lib libusb.lib IlmImf.lib ippicvmt.lib libjasper.lib libjpeg.lib libpng.lib libtiff.lib libwebp.lib opencv_calib3d300.lib opencv_core300.lib opencv_features2d300.lib opencv_flann300.lib opencv_hal300.lib opencv_highgui300.lib opencv_imgcodecs300.lib opencv_imgproc300.lib opencv_ml300.lib opencv_objdetect300.lib opencv_photo300.lib opencv_shape300.lib opencv_stitching300.lib opencv_superres300.lib opencv_ts300.lib opencv_video300.lib opencv_videoio300.lib opencv_videostab300.lib zlib.lib /NODEFAULTLIB:LIBCMT.lib /NODEFAULTLIB:uafxcw.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"C:\MyWork\WorkSpace\VisualStudio\LockDemo\LockDemo\Release\LockDemo.pdb" /SUBSYSTEM:WINDOWS /STACK:"16000000" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /ENTRY:"wWinMainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\MyWork\WorkSpace\VisualStudio\LockDemo\LockDemo\Release\LockDemo.lib" /MACHINE:X86 /SAFESEH Release\LockDemo.res
+         Release\common.obj
+         Release\LockDemo.obj
+         Release\LockDemoDlg.obj
+         Release\packet.obj
+         Release\pic_deal.obj
+         Release\stdafx.obj
+         Release\usb.obj
+         正在生成代码
+         已完成代码的生成
+         LockDemo.vcxproj -> C:\MyWork\WorkSpace\VisualStudio\LockDemo\LockDemo\Release\LockDemo.exe
+     1>已完成生成项目“C:\MyWork\WorkSpace\VisualStudio\LockDemo\LockDemo\LockDemo\LockDemo.vcxproj”(Rebuild 个目标)的操作。
+
+生成成功。
+
+已用时间 00:00:22.18
