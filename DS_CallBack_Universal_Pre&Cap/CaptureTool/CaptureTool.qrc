@@ -1,0 +1,8 @@
+<RCC>
+  <qresource prefix="CaptureTool">
+    <file>biger.png</file>
+    <file>smaller.jpg</file>
+    <file>rotate.png</file>
+    <file>windows_1.png</file>
+  </qresource>
+</RCC>
