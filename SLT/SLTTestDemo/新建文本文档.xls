@@ -1,0 +1,28 @@
+测试项	命令字	结果	信息
+DPU	1		
+DDR	2		
+RTC	3		
+Timer	4		
+DMA	5		
+USI1-SPI	6		
+USI2-SPI	7		
+UART1	8		
+OTPC	9		
+I2C0/1/2	10		
+ADC	11		
+SDIO0	12		
+SDIO1	13		
+GMAC	14		
+CRYPTO	15		
+VPU	16		
+PWM	17		
+I2S	18		
+Mailbox	19		
+RNE	20		
+3D	21		
+AMR	22		
+USB2.0	23		
+MIPI TX USB3.0	24		
+WDT	25		
+SMU	26		
+RNE	27		
