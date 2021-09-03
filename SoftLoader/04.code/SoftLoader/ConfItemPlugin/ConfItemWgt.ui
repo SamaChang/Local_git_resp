@@ -1,0 +1,2113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ConfItemWgt</class>
+ <widget class="QWidget" name="ConfItemWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>965</width>
+    <height>795</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ConfItemWgt</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget_3" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <item>
+         <widget class="QGroupBox" name="groupBox_5">
+          <property name="title">
+           <string>串口设置</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_3">
+           <property name="leftMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QWidget" name="widget_2" native="true">
+             <layout class="QGridLayout" name="gridLayout_5">
+              <property name="leftMargin">
+               <number>9</number>
+              </property>
+              <property name="rightMargin">
+               <number>9</number>
+              </property>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_24">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>端 口</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="1">
+               <widget class="QComboBox" name="cmb_port">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_25">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>波特率</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QComboBox" name="cmb_baudRate">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="editable">
+                 <bool>true</bool>
+                </property>
+                <property name="currentIndex">
+                 <number>8</number>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>1200</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2400</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>4800</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>9600</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>19200</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>38400</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>57600</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>115200</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>500000</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_26">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>数据位</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QComboBox" name="cmb_dataBits">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="currentIndex">
+                 <number>3</number>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>6</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>7</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>8</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QLabel" name="label_27">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>校验位</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QComboBox" name="cmb_parity">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>None</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Even</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Odd</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Space</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>Mark</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QLabel" name="label_28">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>停止位</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QComboBox" name="cmb_stopBits">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>1</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>1.5</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>2</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QLabel" name="label_29">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>流控制</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QComboBox" name="cmb_flowCtrl">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <item>
+                 <property name="text">
+                  <string>None</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>RTS/CTS</string>
+                 </property>
+                </item>
+                <item>
+                 <property name="text">
+                  <string>XON/XOFF</string>
+                 </property>
+                </item>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout_3">
+             <item>
+              <widget class="QPushButton" name="pushButton_7">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>连接</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="pushButton_8">
+               <property name="minimumSize">
+                <size>
+                 <width>0</width>
+                 <height>25</height>
+                </size>
+               </property>
+               <property name="text">
+                <string>关闭</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_9">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>25</height>
+              </size>
+             </property>
+             <property name="text">
+              <string>保存当前配置</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="verticalSpacer">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QGroupBox" name="groupBox">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="title">
+              <string>音量配置</string>
+             </property>
+             <layout class="QHBoxLayout" name="horizontalLayout">
+              <property name="spacing">
+               <number>8</number>
+              </property>
+              <item>
+               <widget class="QLabel" name="label">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>系统默认音量</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spinBox">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <number>31</number>
+                </property>
+                <property name="value">
+                 <number>31</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item>
+               <widget class="QLabel" name="label_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>提示音音量</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QSpinBox" name="spinBox_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <number>31</number>
+                </property>
+                <property name="value">
+                 <number>31</number>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <widget class="QPushButton" name="pushButton">
+                <property name="minimumSize">
+                 <size>
+                  <width>75</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>75</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>配置</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="horizontalSpacer_6">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="title">
+              <string>充电配置</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <property name="spacing">
+               <number>8</number>
+              </property>
+              <item row="1" column="0">
+               <widget class="QLabel" name="label_5">
+                <property name="text">
+                 <string>充电电流(mA)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="4">
+               <widget class="QLabel" name="label_6">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>低电压提醒电压设置(V)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QLabel" name="label_4">
+                <property name="text">
+                 <string>充电满电流(mA)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_3">
+                <property name="text">
+                 <string>充电满电压(V)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="5">
+               <widget class="QSpinBox" name="spinBox_6">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="minimum">
+                 <number>3</number>
+                </property>
+                <property name="maximum">
+                 <number>10</number>
+                </property>
+                <property name="value">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="5">
+               <widget class="QDoubleSpinBox" name="doubleSpinBox_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="minimum">
+                 <double>3.000000000000000</double>
+                </property>
+                <property name="maximum">
+                 <double>3.500000000000000</double>
+                </property>
+                <property name="value">
+                 <double>3.400000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1" colspan="2">
+               <widget class="QSpinBox" name="spinBox_7">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="minimum">
+                 <number>15</number>
+                </property>
+                <property name="maximum">
+                 <number>40</number>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <spacer name="horizontalSpacer_3">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="1" colspan="2">
+               <widget class="QDoubleSpinBox" name="doubleSpinBox">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="decimals">
+                 <number>3</number>
+                </property>
+                <property name="minimum">
+                 <double>4.100000000000000</double>
+                </property>
+                <property name="maximum">
+                 <double>4.500000000000000</double>
+                </property>
+                <property name="value">
+                 <double>4.202000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QLabel" name="label_7">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>低电关机电压设置(V)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1" colspan="2">
+               <widget class="QDoubleSpinBox" name="doubleSpinBox_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="minimum">
+                 <double>3.000000000000000</double>
+                </property>
+                <property name="maximum">
+                 <double>3.500000000000000</double>
+                </property>
+                <property name="value">
+                 <double>3.400000000000000</double>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="7">
+               <spacer name="horizontalSpacer_7">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="6">
+               <widget class="QPushButton" name="pushButton_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>75</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>75</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>配置</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="6">
+               <widget class="QPushButton" name="pushButton_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>75</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>75</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>恢复默认值</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="title">
+              <string>蓝牙配置</string>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <property name="spacing">
+               <number>8</number>
+              </property>
+              <item row="1" column="2">
+               <widget class="QSpinBox" name="spinBox_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <number>10</number>
+                </property>
+                <property name="value">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0">
+               <widget class="QLabel" name="label_8">
+                <property name="text">
+                 <string>蓝牙名称</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0" colspan="2">
+               <widget class="QLabel" name="label_10">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>蓝牙发射频率</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="3">
+               <spacer name="horizontalSpacer_4">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Fixed</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="0" column="5">
+               <widget class="QWidget" name="macWgt" native="true">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>180</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>11111111</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <layout class="QHBoxLayout" name="horizontalLayout_6">
+                 <property name="spacing">
+                  <number>0</number>
+                 </property>
+                 <property name="leftMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="topMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="rightMargin">
+                  <number>0</number>
+                 </property>
+                 <property name="bottomMargin">
+                  <number>0</number>
+                 </property>
+                 <item>
+                  <widget class="QLineEdit" name="edtMac_1">
+                   <property name="minimumSize">
+                    <size>
+                     <width>28</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>25</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>FF</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_15">
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="edtMac_2">
+                   <property name="minimumSize">
+                    <size>
+                     <width>28</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>25</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>FF</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_30">
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="edtMac_3">
+                   <property name="minimumSize">
+                    <size>
+                     <width>28</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>25</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>FF</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_31">
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="edtMac_4">
+                   <property name="minimumSize">
+                    <size>
+                     <width>28</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>25</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>FF</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_32">
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="edtMac_5">
+                   <property name="minimumSize">
+                    <size>
+                     <width>28</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>25</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>FF</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLabel" name="label_33">
+                   <property name="text">
+                    <string>-</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                 <item>
+                  <widget class="QLineEdit" name="edtMac_6">
+                   <property name="minimumSize">
+                    <size>
+                     <width>28</width>
+                     <height>0</height>
+                    </size>
+                   </property>
+                   <property name="maximumSize">
+                    <size>
+                     <width>28</width>
+                     <height>16777215</height>
+                    </size>
+                   </property>
+                   <property name="text">
+                    <string>FF</string>
+                   </property>
+                   <property name="alignment">
+                    <set>Qt::AlignCenter</set>
+                   </property>
+                  </widget>
+                 </item>
+                </layout>
+               </widget>
+              </item>
+              <item row="0" column="7">
+               <spacer name="horizontalSpacer_8">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeType">
+                 <enum>QSizePolicy::Preferred</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>40</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+              <item row="1" column="5">
+               <widget class="QSpinBox" name="spinBox_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximum">
+                 <number>10</number>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="4">
+               <widget class="QLabel" name="label_11">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string>未连接自动关机配置(分钟)</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="2">
+               <widget class="QLineEdit" name="lineEdit">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>25</height>
+                 </size>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="4">
+               <widget class="QLabel" name="label_9">
+                <property name="text">
+                 <string>蓝牙MAC地址</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="6">
+               <widget class="QPushButton" name="pushButton_4">
+                <property name="minimumSize">
+                 <size>
+                  <width>75</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>75</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>配置</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="6">
+               <widget class="QPushButton" name="pushButton_5">
+                <property name="minimumSize">
+                 <size>
+                  <width>75</width>
+                  <height>25</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>75</width>
+                  <height>16777215</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>恢复默认值</string>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QGroupBox" name="groupBox_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="title">
+              <string>按键配置</string>
+             </property>
+             <layout class="QVBoxLayout" name="verticalLayout_2">
+              <property name="spacing">
+               <number>8</number>
+              </property>
+              <item>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QLabel" name="label_12">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键数量</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QSpinBox" name="spinBox_5">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="minimum">
+                   <number>1</number>
+                  </property>
+                  <property name="maximum">
+                   <number>10</number>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <widget class="QPushButton" name="pushButton_6">
+                  <property name="minimumSize">
+                   <size>
+                    <width>75</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>75</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string>配置</string>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <spacer name="horizontalSpacer">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>40</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <layout class="QGridLayout" name="gridLayout_3">
+                <property name="spacing">
+                 <number>8</number>
+                </property>
+                <item row="0" column="1">
+                 <widget class="QComboBox" name="cmb_aj_1">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1 接听电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2 挂断电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3 拒接电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4 播放音乐</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5 上一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6 下一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7 音乐暂停</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8 音量＋</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9 音量－</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 复位</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11 唤醒语音助手</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="1" column="4">
+                 <widget class="QComboBox" name="cmb_aj_4">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1 接听电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2 挂断电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3 拒接电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4 播放音乐</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5 上一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6 下一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7 音乐暂停</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8 音量＋</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9 音量－</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 复位</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11 唤醒语音助手</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="1" column="3">
+                 <widget class="QLabel" name="label_17">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键4功能</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="1">
+                 <widget class="QComboBox" name="cmb_aj_5">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1 接听电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2 挂断电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3 拒接电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4 播放音乐</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5 上一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6 下一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7 音乐暂停</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8 音量＋</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9 音量－</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 复位</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11 唤醒语音助手</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="3" column="1">
+                 <widget class="QComboBox" name="cmb_aj_7">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1 接听电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2 挂断电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3 拒接电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4 播放音乐</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5 上一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6 下一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7 音乐暂停</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8 音量＋</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9 音量－</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 复位</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11 唤醒语音助手</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="3" column="3">
+                 <widget class="QLabel" name="label_21">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键8功能</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="3" column="0">
+                 <widget class="QLabel" name="label_20">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键7功能</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="1">
+                 <widget class="QComboBox" name="cmb_aj_9">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1 接听电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2 挂断电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3 拒接电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4 播放音乐</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5 上一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6 下一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7 音乐暂停</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8 音量＋</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9 音量－</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 复位</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11 唤醒语音助手</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="3" column="4">
+                 <widget class="QComboBox" name="cmb_aj_8">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1 接听电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2 挂断电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3 拒接电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4 播放音乐</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5 上一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6 下一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7 音乐暂停</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8 音量＋</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9 音量－</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 复位</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11 唤醒语音助手</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="4" column="4">
+                 <widget class="QComboBox" name="cmb_aj_10">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1 接听电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2 挂断电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3 拒接电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4 播放音乐</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5 上一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6 下一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7 音乐暂停</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8 音量＋</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9 音量－</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 复位</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11 唤醒语音助手</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="1" column="1">
+                 <widget class="QComboBox" name="cmb_aj_3">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1 接听电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2 挂断电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3 拒接电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4 播放音乐</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5 上一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6 下一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7 音乐暂停</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8 音量＋</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9 音量－</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 复位</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11 唤醒语音助手</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="2" column="0">
+                 <widget class="QLabel" name="label_18">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键5功能</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="0">
+                 <widget class="QLabel" name="label_16">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键3功能</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="2" column="4">
+                 <widget class="QComboBox" name="cmb_aj_6">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1 接听电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2 挂断电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3 拒接电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4 播放音乐</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5 上一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6 下一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7 音乐暂停</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8 音量＋</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9 音量－</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 复位</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11 唤醒语音助手</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="2" column="3">
+                 <widget class="QLabel" name="label_19">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键6功能</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="4">
+                 <widget class="QComboBox" name="cmb_aj_2">
+                  <property name="minimumSize">
+                   <size>
+                    <width>0</width>
+                    <height>25</height>
+                   </size>
+                  </property>
+                  <item>
+                   <property name="text">
+                    <string>1 接听电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>2 挂断电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>3 拒接电话</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>4 播放音乐</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>5 上一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>6 下一首</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>7 音乐暂停</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>8 音量＋</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>9 音量－</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>10 复位</string>
+                   </property>
+                  </item>
+                  <item>
+                   <property name="text">
+                    <string>11 唤醒语音助手</string>
+                   </property>
+                  </item>
+                 </widget>
+                </item>
+                <item row="4" column="0">
+                 <widget class="QLabel" name="label_22">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键9功能</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="3">
+                 <widget class="QLabel" name="label_14">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键2功能</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="0" column="0">
+                 <widget class="QLabel" name="label_13">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键1功能</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="4" column="3">
+                 <widget class="QLabel" name="label_23">
+                  <property name="sizePolicy">
+                   <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                    <horstretch>0</horstretch>
+                    <verstretch>0</verstretch>
+                   </sizepolicy>
+                  </property>
+                  <property name="text">
+                   <string>按键10功能</string>
+                  </property>
+                 </widget>
+                </item>
+                <item row="1" column="2">
+                 <spacer name="horizontalSpacer_5">
+                  <property name="orientation">
+                   <enum>Qt::Horizontal</enum>
+                  </property>
+                  <property name="sizeType">
+                   <enum>QSizePolicy::Fixed</enum>
+                  </property>
+                  <property name="sizeHint" stdset="0">
+                   <size>
+                    <width>20</width>
+                    <height>20</height>
+                   </size>
+                  </property>
+                 </spacer>
+                </item>
+               </layout>
+              </item>
+              <item>
+               <spacer name="verticalSpacer_2">
+                <property name="orientation">
+                 <enum>Qt::Vertical</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>20</width>
+                  <height>40</height>
+                 </size>
+                </property>
+               </spacer>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QHBoxLayout" name="horizontalLayout_5">
+        <property name="rightMargin">
+         <number>9</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="lab_status">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="lab_info">
+          <property name="sizePolicy">
+           <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+            <horstretch>0</horstretch>
+            <verstretch>0</verstretch>
+           </sizepolicy>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>30</height>
+           </size>
+          </property>
+          <property name="text">
+           <string/>
+          </property>
+          <property name="alignment">
+           <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

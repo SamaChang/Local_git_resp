@@ -1,0 +1,55 @@
+{
+    "eqtool_conf": [
+        {
+            "Q": 1,
+            "boost": 3.8,
+            "serial": 0
+        },
+        {
+            "Q": 1,
+            "boost": 5.5,
+            "serial": 1
+        },
+        {
+            "Q": 1,
+            "boost": 4.3,
+            "serial": 2
+        },
+        {
+            "Q": 1,
+            "boost": 3,
+            "serial": 3
+        },
+        {
+            "Q": 1,
+            "boost": -2.9,
+            "serial": 4
+        },
+        {
+            "Q": 1,
+            "boost": 3.2,
+            "serial": 5
+        },
+        {
+            "Q": 1,
+            "boost": 2,
+            "serial": 6
+        },
+        {
+            "Q": 1,
+            "boost": 2,
+            "serial": 7
+        },
+        {
+            "Q": 1,
+            "boost": 1.7,
+            "serial": 8
+        },
+        {
+            "Q": 1,
+            "boost": 1.7,
+            "serial": 9
+        }
+    ],
+    "sys_dB": 6
+}

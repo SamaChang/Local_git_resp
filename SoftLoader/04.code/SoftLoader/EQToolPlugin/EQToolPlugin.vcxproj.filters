@@ -1,0 +1,118 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{6bc738bf-f01c-4163-a105-0c5555535814}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{d84f74e3-400e-4188-94e6-1c7e68b6eb22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\serialport">
+      <UniqueIdentifier>{5b005922-4afc-490b-bbec-702f36362118}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\customplot">
+      <UniqueIdentifier>{6dd2a0c9-61df-4b1f-b92a-acee2bb3bd39}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\datastruct">
+      <UniqueIdentifier>{223a0081-8392-4c65-a4ad-4a0f53d2ffe6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法">
+      <UniqueIdentifier>{95688812-72ce-4155-aec3-82c6cecf1ab4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="eqtoolplugin_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClCompile Include="EQToolPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\common\datastruct\DataStruct_anc_eq.h">
+      <Filter>common\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\datastruct\FrequencySpectrum.h">
+      <Filter>common\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\waveAlgorithm\skv_wolf_function.h">
+      <Filter>算法</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="EQToolPlugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="EQTools.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\serialport\HandleCom.h">
+      <Filter>common\serialport</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\serialport\SerialPortDlg.h">
+      <Filter>common\serialport</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\customplot\QEQLinesChart.h">
+      <Filter>common\customplot</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\customplot\QAbstractDynamicLinesChart.h">
+      <Filter>common\customplot</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\customplot\qcustomplot.h">
+      <Filter>common\customplot</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EQTools.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\serialport\HandleCom.cpp">
+      <Filter>common\serialport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\serialport\SerialPortDlg.cpp">
+      <Filter>common\serialport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\customplot\QEQLinesChart.cpp">
+      <Filter>common\customplot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\customplot\QAbstractDynamicLinesChart.cpp">
+      <Filter>common\customplot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\customplot\qcustomplot.cpp">
+      <Filter>common\customplot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\datastruct\FrequencySpectrum.cpp">
+      <Filter>common\datastruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\waveAlgorithm\skv_wolf_function.c">
+      <Filter>算法</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="EQTools.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\common\serialport\SerialPortDlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="ANCTool.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+</Project>

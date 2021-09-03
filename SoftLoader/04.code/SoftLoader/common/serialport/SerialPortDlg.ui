@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>SerialPortDlg</class>
+ <widget class="QDialog" name="SerialPortDlg">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1057</width>
+    <height>739</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>串口助手</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_5">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>50</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <property name="leftMargin">
+       <number>9</number>
+      </property>
+      <property name="topMargin">
+       <number>1</number>
+      </property>
+      <property name="rightMargin">
+       <number>9</number>
+      </property>
+      <property name="bottomMargin">
+       <number>1</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_start">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>开始</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_stop">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>25</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>停止</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="horizontalLayout_5">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="QWidget" name="widget_2" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>200</width>
+         <height>0</height>
+        </size>
+       </property>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="topMargin">
+         <number>5</number>
+        </property>
+        <item>
+         <widget class="QGroupBox" name="groupBox">
+          <property name="title">
+           <string>串口设置</string>
+          </property>
+          <layout class="QGridLayout" name="gridLayout">
+           <item row="0" column="0">
+            <widget class="QLabel" name="label">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>端 口</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QComboBox" name="cmb_port"/>
+           </item>
+           <item row="1" column="0">
+            <widget class="QLabel" name="label_2">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>波特率</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QComboBox" name="cmb_baudRate">
+             <property name="editable">
+              <bool>true</bool>
+             </property>
+             <property name="currentIndex">
+              <number>8</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>1200</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2400</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>4800</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>9600</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>19200</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>38400</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>57600</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>115200</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>500000</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_3">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>数据位</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QComboBox" name="cmb_dataBits">
+             <property name="currentIndex">
+              <number>3</number>
+             </property>
+             <item>
+              <property name="text">
+               <string>5</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>6</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>7</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>8</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QLabel" name="label_4">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>校验位</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QComboBox" name="cmb_parity">
+             <item>
+              <property name="text">
+               <string>None</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Even</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Odd</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Space</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>Mark</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="4" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>停止位</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QComboBox" name="cmb_stopBits">
+             <item>
+              <property name="text">
+               <string>1</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>1.5</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>2</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+           <item row="5" column="0">
+            <widget class="QLabel" name="label_6">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="text">
+              <string>流控制</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QComboBox" name="cmb_flowCtrl">
+             <item>
+              <property name="text">
+               <string>None</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>RTS/CTS</string>
+              </property>
+             </item>
+             <item>
+              <property name="text">
+               <string>XON/XOFF</string>
+              </property>
+             </item>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <widget class="QGroupBox" name="groupBox_2">
+          <property name="title">
+           <string>接收设置</string>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout">
+           <item>
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <widget class="QRadioButton" name="rbtn_recv_ascii">
+               <property name="text">
+                <string>ASCII</string>
+               </property>
+               <property name="checked">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QRadioButton" name="rbtn_recv_hex">
+               <property name="text">
+                <string>Hex</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="ckb_autoWrap">
+             <property name="text">
+              <string>自动换行</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="ckb_showSend">
+             <property name="text">
+              <string>显示发送</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QCheckBox" name="ckb_showTm">
+             <property name="text">
+              <string>显示时间</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </widget>
+     </item>
+     <item>
+      <widget class="QWidget" name="widget_3" native="true">
+       <layout class="QVBoxLayout" name="verticalLayout_4">
+        <item>
+         <widget class="QPlainTextEdit" name="plainTextEdit_recv">
+          <property name="readOnly">
+           <bool>true</bool>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout_3">
+          <item>
+           <widget class="QTextEdit" name="tedt_send">
+            <property name="sizePolicy">
+             <sizepolicy hsizetype="Expanding" vsizetype="Fixed">
+              <horstretch>0</horstretch>
+              <verstretch>0</verstretch>
+             </sizepolicy>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>16777215</width>
+              <height>120</height>
+             </size>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QPushButton" name="btn_send">
+              <property name="minimumSize">
+               <size>
+                <width>75</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>发送</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_send_IIR">
+              <property name="minimumSize">
+               <size>
+                <width>75</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>发送IIR</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="btn_clear">
+              <property name="minimumSize">
+               <size>
+                <width>75</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>清空</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <widget class="QWidget" name="widget_4" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>0</width>
+       <height>40</height>
+      </size>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_6">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <item>
+       <widget class="QLabel" name="lab_info">
+        <property name="text">
+         <string>提示区</string>
+        </property>
+        <property name="indent">
+         <number>10</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

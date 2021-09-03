@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>FlashWgt</class>
+ <widget class="QWidget" name="FlashWgt">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1135</width>
+    <height>701</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>FlashWgt</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="widget" native="true">
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>3</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>3</number>
+         </property>
+         <item>
+          <widget class="QPushButton" name="pushButton_1">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>28</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>选择文件</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_2">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>28</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>检测可用串口</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_3">
+           <property name="minimumSize">
+            <size>
+             <width>100</width>
+             <height>28</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>开始烧写</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="checkBox">
+           <property name="text">
+            <string>加密</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <spacer name="horizontalSpacer">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>40</width>
+             <height>20</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="singleWgts" native="true">
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="sizeConstraint">
+          <enum>QLayout::SetNoConstraint</enum>
+         </property>
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <widget class="SingleWgt" name="singleWgt_1" native="true"/>
+         </item>
+         <item row="0" column="1">
+          <widget class="SingleWgt" name="singleWgt_2" native="true"/>
+         </item>
+         <item row="0" column="2">
+          <widget class="SingleWgt" name="singleWgt_3" native="true"/>
+         </item>
+         <item row="0" column="3">
+          <widget class="SingleWgt" name="singleWgt_4" native="true"/>
+         </item>
+         <item row="1" column="0">
+          <widget class="SingleWgt" name="singleWgt_5" native="true"/>
+         </item>
+         <item row="1" column="1">
+          <widget class="SingleWgt" name="singleWgt_6" native="true"/>
+         </item>
+         <item row="1" column="2">
+          <widget class="SingleWgt" name="singleWgt_7" native="true"/>
+         </item>
+         <item row="1" column="3">
+          <widget class="SingleWgt" name="singleWgt_8" native="true"/>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>SingleWgt</class>
+   <extends>QWidget</extends>
+   <header>SingleWgt.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ANCSoft</class>
+ <widget class="QWidget" name="ANCSoft">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1456</width>
+    <height>788</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ANCSoft</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_2">
+   <property name="spacing">
+    <number>1</number>
+   </property>
+   <property name="leftMargin">
+    <number>1</number>
+   </property>
+   <property name="topMargin">
+    <number>1</number>
+   </property>
+   <property name="rightMargin">
+    <number>1</number>
+   </property>
+   <property name="bottomMargin">
+    <number>1</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="mainToolWgt" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <layout class="QHBoxLayout" name="horizontalLayout_8">
+      <property name="topMargin">
+       <number>3</number>
+      </property>
+      <property name="bottomMargin">
+       <number>3</number>
+      </property>
+      <item>
+       <widget class="QPushButton" name="btn_tool_open">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>打开</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_tool_save">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>保存</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="text">
+         <string>信号类型:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_type">
+        <property name="minimumSize">
+         <size>
+          <width>80</width>
+          <height>28</height>
+         </size>
+        </property>
+        <item>
+         <property name="text">
+          <string>实时采集</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>白噪声</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>粉噪声</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>1K正弦波</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_tool_record">
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>开始</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_tool_suspend">
+        <property name="enabled">
+         <bool>false</bool>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>50</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>停止</string>
+        </property>
+        <property name="checkable">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_3">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_tool_record_param">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>音频参数</string>
+        </property>
+        <property name="checkable">
+         <bool>false</bool>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_tool_conf_io">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>配置IO</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_tool_conf_axis">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>显示配置</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_optimal_show">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>最优显示</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer_2">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Fixed</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>20</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QLabel" name="label_2">
+        <property name="text">
+         <string>设置积累:</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QComboBox" name="comboBox_points">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>28</height>
+         </size>
+        </property>
+        <item>
+         <property name="text">
+          <string>1</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>2</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>3</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>4</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>5</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>6</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>7</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>8</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>9</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>10</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>11</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>12</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>13</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>14</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>15</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>16</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>17</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>18</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>19</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>20</string>
+         </property>
+        </item>
+        <item>
+         <property name="text">
+          <string>infinite</string>
+         </property>
+        </item>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_save_data_fr">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>FR另存为</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="btn_save_data_phase">
+        <property name="minimumSize">
+         <size>
+          <width>75</width>
+          <height>28</height>
+         </size>
+        </property>
+        <property name="text">
+         <string>PHASE另存为</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QWidget" name="devStateWgt" native="true">
+        <property name="minimumSize">
+         <size>
+          <width>300</width>
+          <height>0</height>
+         </size>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_5">
+         <property name="leftMargin">
+          <number>1</number>
+         </property>
+         <property name="topMargin">
+          <number>1</number>
+         </property>
+         <property name="rightMargin">
+          <number>1</number>
+         </property>
+         <property name="bottomMargin">
+          <number>1</number>
+         </property>
+         <item row="0" column="1">
+          <widget class="QLabel" name="lab_dev_state_input_freq">
+           <property name="text">
+            <string>--</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="2">
+          <widget class="QLabel" name="lab_dev_state_input_bits">
+           <property name="text">
+            <string>--</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QLabel" name="lab_dev_state_input">
+           <property name="text">
+            <string>音频参数</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QLabel" name="lab_dev_state_input_channel">
+           <property name="text">
+            <string>--</string>
+           </property>
+           <property name="alignment">
+            <set>Qt::AlignCenter</set>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <widget class="ANCTool" name="ancWgt" native="true"/>
+   </item>
+  </layout>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>ANCTool</class>
+   <extends>QWidget</extends>
+   <header>anctool.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

@@ -1,0 +1,36 @@
+﻿D:\software\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Intermediate 目录。
+D:\software\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  Reading Qt configuration (D:/software/Qt5.14.1/5.14.1/msvc2017/bin/qmake)
+D:\software\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Intermediate 目录。
+D:\software\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  uic ..\common\serialport\SerialPortDlg.ui
+  uic EQTools.ui
+  rcc ANCTool.qrc
+  moc ..\common\serialport\HandleCom.h
+   RCC: Warning: No resources in 'D:\workSVN\trunk\code\tools_pc\SoftLoader\04.code\SoftLoader\EQToolPlugin\ANCTool.qrc'.
+  moc ..\common\serialport\SerialPortDlg.h
+  moc ..\common\customplot\QEQLinesChart.h
+  moc ..\common\customplot\QAbstractDynamicLinesChart.h
+  moc ..\common\customplot\qcustomplot.h
+  moc EQTools.h
+  moc EQToolPlugin.h
+  skv_wolf_function.c
+  QAbstractDynamicLinesChart.cpp
+  qcustomplot.cpp
+  QEQLinesChart.cpp
+  FrequencySpectrum.cpp
+  HandleCom.cpp
+  SerialPortDlg.cpp
+  EQTools.cpp
+  EQToolPlugin.cpp
+d:\worksvn\trunk\code\tools_pc\softloader\04.code\softloader\3rd\math\wavealgorithm\skv_wolf_function.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失 (编译源文件 EQTools.cpp)
+  qrc_ANCTool.cpp
+  moc_HandleCom.cpp
+  moc_SerialPortDlg.cpp
+  moc_QEQLinesChart.cpp
+  moc_QAbstractDynamicLinesChart.cpp
+  moc_qcustomplot.cpp
+  moc_EQTools.cpp
+  moc_EQToolPlugin.cpp
+    正在创建库 ..\PluginLib\EQToolPlugin.lib 和对象 ..\PluginLib\EQToolPlugin.exp
+  EQToolPlugin.vcxproj -> D:\workSVN\trunk\code\tools_pc\SoftLoader\04.code\SoftLoader\EQToolPlugin\..\Bin\Plugin\EQToolPlugin.dll

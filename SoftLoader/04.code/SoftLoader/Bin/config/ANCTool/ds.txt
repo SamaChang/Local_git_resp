@@ -1,0 +1,191 @@
+{
+    "freqrate": 22050,
+    "wave_filter_fb": {
+        "data": [
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 1,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 2,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 3,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 4,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 5,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 6,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 7,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 8,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 9,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 10,
+                "slope": 0,
+                "type": 0
+            }
+        ]
+    },
+    "wave_filter_ff": {
+        "data": [
+            {
+                "bandWidth": 1,
+                "boost": 10,
+                "freq": 1000,
+                "gain": 0,
+                "serial": 1,
+                "slope": 0,
+                "type": 1
+            },
+            {
+                "bandWidth": 1,
+                "boost": 10,
+                "freq": 1100,
+                "gain": 1,
+                "serial": 2,
+                "slope": 0,
+                "type": 1
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 3,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 4,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 5,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 6,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 7,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 8,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 9,
+                "slope": 0,
+                "type": 0
+            },
+            {
+                "bandWidth": 0,
+                "boost": 0,
+                "freq": 0,
+                "gain": 0,
+                "serial": 10,
+                "slope": 0,
+                "type": 0
+            }
+        ]
+    }
+}

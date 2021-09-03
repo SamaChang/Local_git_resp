@@ -1,0 +1,351 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>qrc;rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Translation Files">
+      <UniqueIdentifier>{639EADAA-A684-42e4-A9AD-28FC9BCB8F7C}</UniqueIdentifier>
+      <Extensions>ts</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>true</ParseFiles>
+    </Filter>
+    <Filter Include="common">
+      <UniqueIdentifier>{32b47454-ac9b-424e-be93-e95814c221f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\customplot">
+      <UniqueIdentifier>{33121ab2-dd7a-4e2b-8566-354e1247095d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\datastruct">
+      <UniqueIdentifier>{6e5b8428-2b1e-4e64-ba10-d571980c0705}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="common\serialport">
+      <UniqueIdentifier>{706b18f6-e703-4bdf-99f8-699445f908c3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法">
+      <UniqueIdentifier>{2eee6284-095c-47a1-8456-b633c0c713dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法\skv">
+      <UniqueIdentifier>{5c155af1-ac9a-4b69-83b2-36bd97b67c64}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法\basic">
+      <UniqueIdentifier>{c10a1570-8585-46da-9404-31310493a496}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法\waveAlgorithm">
+      <UniqueIdentifier>{77e4b5c8-dfaa-4b58-8005-4da81e75d4c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="算法\math">
+      <UniqueIdentifier>{c6d27ff8-b273-46a4-bbef-2a177954868d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="anctoolplugin_global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <QtMoc Include="ANCToolPlugin.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="ANCToolPlugin.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClInclude Include="..\common\customplot\Utility.h">
+      <Filter>common\customplot</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="WavFile.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\datastruct\DataStruct_anc_eq.h">
+      <Filter>common\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\common\datastruct\FrequencySpectrum.h">
+      <Filter>common\datastruct</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\basic\os_support.h">
+      <Filter>算法\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\basic\skv_config.h">
+      <Filter>算法\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\basic\skv_fixed.h">
+      <Filter>算法\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\basic\skv_info.h">
+      <Filter>算法\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\basic\skv_types.h">
+      <Filter>算法\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\basic\skv_ulity.h">
+      <Filter>算法\basic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\skv\FFTHeader.h">
+      <Filter>算法\skv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\skv\skv_preprocess.h">
+      <Filter>算法\skv</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\waveAlgorithm\skv_wolf_function.h">
+      <Filter>算法\waveAlgorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\_kiss_fft_guts.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\_kiss_fft_guts_fix.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\fixed_generic.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\kiss_fft.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\kiss_fft_fix.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\kiss_fftr.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\kiss_fftr_fix.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\map.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\math_approx.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\math_approx_fix.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\skv_fastmath.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\skv_fftwrap.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\skv_fftwrap_fix.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\skv_math.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\skv_math_core.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\skv_math_core_fix.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+    <ClInclude Include="..\3rd\math\math\smallft.h">
+      <Filter>算法\math</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ANCTool.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\serialport\HandleCom.cpp">
+      <Filter>common\serialport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\serialport\SerialPortDlg.cpp">
+      <Filter>common\serialport</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\customplot\QAbstractDynamicLinesChart.cpp">
+      <Filter>common\customplot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\customplot\qcustomplot.cpp">
+      <Filter>common\customplot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\customplot\QFreqLinesChart.cpp">
+      <Filter>common\customplot</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\customplot\Utility.cpp">
+      <Filter>common\customplot</Filter>
+    </ClCompile>
+    <ClCompile Include="QWaveFilterDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Config.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QConfLineColorDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ANCSoft.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QConfigIO.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QConfAudioDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RealTimeEngine.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WavFile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SpectrumAnalyser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="QConfigAxisDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="WaveChart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CalcWgt.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\common\datastruct\FrequencySpectrum.cpp">
+      <Filter>common\datastruct</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\basic\skv_ulity.cpp">
+      <Filter>算法\basic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\skv\skv_preprocess.cpp">
+      <Filter>算法\skv</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\waveAlgorithm\skv_wolf_function.c">
+      <Filter>算法\waveAlgorithm</Filter>
+    </ClCompile>
+    <ClCompile Include="LinkDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\math\kiss_fft.c">
+      <Filter>算法\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\math\kiss_fft_fix.c">
+      <Filter>算法\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\math\kiss_fftr.c">
+      <Filter>算法\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\math\kiss_fftr_fix.c">
+      <Filter>算法\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\math\map.c">
+      <Filter>算法\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\math\skv_fastmath.c">
+      <Filter>算法\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\math\skv_fftwrap.c">
+      <Filter>算法\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\math\skv_fftwrap_fix.c">
+      <Filter>算法\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\math\skv_math.c">
+      <Filter>算法\math</Filter>
+    </ClCompile>
+    <ClCompile Include="..\3rd\math\math\smallft.c">
+      <Filter>算法\math</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ANCTool.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\serialport\HandleCom.h">
+      <Filter>common\serialport</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\serialport\SerialPortDlg.h">
+      <Filter>common\serialport</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\customplot\QAbstractDynamicLinesChart.h">
+      <Filter>common\customplot</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\customplot\qcustomplot.h">
+      <Filter>common\customplot</Filter>
+    </QtMoc>
+    <QtMoc Include="..\common\customplot\QFreqLinesChart.h">
+      <Filter>common\customplot</Filter>
+    </QtMoc>
+    <QtMoc Include="QWaveFilterDlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="QConfLineColorDlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="ANCSoft.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="QConfigIO.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="QConfAudioDlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="RealTimeEngine.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SpectrumAnalyser.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="QConfigAxisDlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="WaveChart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CalcWgt.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="LinkDlg.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ANCTool.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="..\common\serialport\SerialPortDlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="QWaveFilterDlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="QConfLineColorDlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ANCSoft.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="QConfigIO.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="QConfAudioDlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="QConfigAxisDlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CalcWgt.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="LinkDlg.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Resource.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+  </ItemGroup>
+</Project>

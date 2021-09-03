@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<conf_plugin>
+	<!--
+		id插件ID
+		pluginName插件名称
+		bLoad是否加载0不加载1加载
+	-->
+	<sub_plugin id="1" softName="配置项工具" 	pluginName="ConfItemPlugin.dll" 	bLoad="1" />
+	<sub_plugin id="2" softName="EQ调试工具" 	pluginName="EQToolPlugin.dll" 	bLoad="1" />
+	<sub_plugin id="3" softName="ANC调试工具" 	pluginName="ANCToolPlugin.dll" 	bLoad="1" />
+	<sub_plugin id="4" softName="Flash烧写工具" pluginName="FlashPlugin.dll" 	bLoad="1" />
+</conf_plugin>

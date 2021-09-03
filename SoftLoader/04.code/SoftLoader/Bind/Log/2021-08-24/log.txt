@@ -1,0 +1,2 @@
+============================begin??2021-08-24================================
+2021-08-24 21:14:52--d:\worksvn\trunk\code\tools_pc\softloader\04.code\softloader\flashplugin\writelog.cpp<<<WriteLog::slot_thread_started(70)>>>日志线程13672启动

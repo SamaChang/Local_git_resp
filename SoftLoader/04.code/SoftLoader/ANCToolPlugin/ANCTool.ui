@@ -1,0 +1,1385 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ANCTool</class>
+ <widget class="QWidget" name="ANCTool">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1300</width>
+    <height>777</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ANC调试工具</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout_7">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <widget class="QWidget" name="mainWgt" native="true">
+     <layout class="QHBoxLayout" name="horizontalLayout_7">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>2</number>
+      </property>
+      <item>
+       <widget class="QWidget" name="widget_7" native="true">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>250</width>
+          <height>0</height>
+         </size>
+        </property>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLabel" name="lab_debug">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>35</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>调试区</string>
+           </property>
+           <property name="indent">
+            <number>5</number>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_4" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_3">
+            <property name="topMargin">
+             <number>2</number>
+            </property>
+            <property name="bottomMargin">
+             <number>2</number>
+            </property>
+            <item>
+             <widget class="QLabel" name="label_2">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="text">
+               <string>端口:</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QComboBox" name="comboBox"/>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton_2">
+              <property name="minimumSize">
+               <size>
+                <width>75</width>
+                <height>0</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>75</width>
+                <height>16777215</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>连接</string>
+              </property>
+              <property name="checkable">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout">
+           <item>
+            <widget class="QWidget" name="widget" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <layout class="QGridLayout" name="gridLayout">
+              <item row="4" column="1">
+               <widget class="QPushButton" name="ff_btn_4">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="QPushButton" name="ff_btn_7">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QPushButton" name="ff_btn_5">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="1">
+               <widget class="QPushButton" name="ff_btn_8">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QPushButton" name="ff_btn_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QPushButton" name="ff_btn_1">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+                <property name="checkable">
+                 <bool>false</bool>
+                </property>
+                <property name="checked">
+                 <bool>false</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="1">
+               <widget class="QPushButton" name="ff_btn_10">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0">
+               <widget class="QCheckBox" name="ff_ckb_8">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QCheckBox" name="ff_ckb_5">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="1">
+               <widget class="QPushButton" name="ff_btn_9">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="0">
+               <widget class="QCheckBox" name="ff_ckb_9">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QCheckBox" name="ff_ckb_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QCheckBox" name="ff_ckb_1">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QCheckBox" name="ff_ckb_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QCheckBox" name="ff_ckb_6">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QCheckBox" name="ff_ckb_7">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QPushButton" name="ff_btn_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <widget class="QPushButton" name="ff_btn_6">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <widget class="QLabel" name="lab_ff">
+                <property name="text">
+                 <string>ff</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QCheckBox" name="ff_ckb_3">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="0">
+               <widget class="QCheckBox" name="ff_ckb_10">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+           <item>
+            <widget class="QWidget" name="widget_3" native="true">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>120</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <layout class="QGridLayout" name="gridLayout_2">
+              <item row="9" column="0">
+               <widget class="QCheckBox" name="fb_ckb_9">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="1">
+               <widget class="QPushButton" name="fb_btn_6">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="1">
+               <widget class="QPushButton" name="fb_btn_7">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="1">
+               <widget class="QPushButton" name="fb_btn_1">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="0" column="0" colspan="2">
+               <widget class="QLabel" name="lab_fb">
+                <property name="text">
+                 <string>fb</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="1">
+               <widget class="QPushButton" name="fb_btn_4">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="0">
+               <widget class="QCheckBox" name="fb_ckb_8">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="0">
+               <widget class="QCheckBox" name="fb_ckb_3">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="1" column="0">
+               <widget class="QCheckBox" name="fb_ckb_1">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="0">
+               <widget class="QCheckBox" name="fb_ckb_2">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="0">
+               <widget class="QCheckBox" name="fb_ckb_10">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="8" column="1">
+               <widget class="QPushButton" name="fb_btn_8">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="4" column="0">
+               <widget class="QCheckBox" name="fb_ckb_4">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="0">
+               <widget class="QCheckBox" name="fb_ckb_5">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="6" column="0">
+               <widget class="QCheckBox" name="fb_ckb_6">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+              <item row="2" column="1">
+               <widget class="QPushButton" name="fb_btn_2">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="9" column="1">
+               <widget class="QPushButton" name="fb_btn_9">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="10" column="1">
+               <widget class="QPushButton" name="fb_btn_10">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="3" column="1">
+               <widget class="QPushButton" name="fb_btn_3">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="5" column="1">
+               <widget class="QPushButton" name="fb_btn_5">
+                <property name="minimumSize">
+                 <size>
+                  <width>0</width>
+                  <height>28</height>
+                 </size>
+                </property>
+                <property name="text">
+                 <string>bypass</string>
+                </property>
+               </widget>
+              </item>
+              <item row="7" column="0">
+               <widget class="QCheckBox" name="fb_ckb_7">
+                <property name="sizePolicy">
+                 <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+                  <horstretch>0</horstretch>
+                  <verstretch>0</verstretch>
+                 </sizepolicy>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="checked">
+                 <bool>true</bool>
+                </property>
+               </widget>
+              </item>
+             </layout>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="QPushButton" name="btn_write_hardware">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>28</height>
+            </size>
+           </property>
+           <property name="text">
+            <string>写入硬件</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_2" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout_2">
+            <item>
+             <widget class="QLabel" name="label">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="maximumSize">
+               <size>
+                <width>16777215</width>
+                <height>30</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>提示消息</string>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPlainTextEdit" name="plainTextEdit">
+              <property name="contextMenuPolicy">
+               <enum>Qt::NoContextMenu</enum>
+              </property>
+              <property name="readOnly">
+               <bool>true</bool>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QPushButton" name="pushButton">
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>28</height>
+               </size>
+              </property>
+              <property name="text">
+               <string>清空</string>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QWidget" name="widget22" native="true">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <item>
+          <widget class="QWidget" name="widget_9" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_5">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QFreqLinesChart" name="frChartWgt" native="true"/>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_8" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <property name="minimumSize">
+               <size>
+                <width>0</width>
+                <height>0</height>
+               </size>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_4">
+               <item row="3" column="0">
+                <widget class="QPushButton" name="fr_line_btn_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="0">
+                <widget class="QPushButton" name="fr_line_btn_1">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QCheckBox" name="fr_line_3">
+                 <property name="text">
+                  <string>Line 3</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="fr_line_1">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Line 1</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="fr_line_2">
+                 <property name="text">
+                  <string>Line 2</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="fr_line_btn_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QCheckBox" name="fr_line_5">
+                 <property name="text">
+                  <string>Line 5</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QCheckBox" name="fr_line_6">
+                 <property name="text">
+                  <string>运算线段</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="fr_line_btn_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QCheckBox" name="fr_line_4">
+                 <property name="text">
+                  <string>Line 4</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="0" colspan="2">
+                <widget class="QPushButton" name="frChart_btn_conf">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>28</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>FR配置</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QPushButton" name="fr_line_btn_5">
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QPushButton" name="fr_line_btn_6">
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>A</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0" colspan="2">
+                <widget class="QCheckBox" name="fr_line_FF">
+                 <property name="text">
+                  <string>显示FF</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="0" colspan="2">
+                <widget class="QCheckBox" name="fr_line_FB">
+                 <property name="text">
+                  <string>显示FB</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_10" native="true">
+           <layout class="QHBoxLayout" name="horizontalLayout_2">
+            <property name="leftMargin">
+             <number>0</number>
+            </property>
+            <property name="topMargin">
+             <number>0</number>
+            </property>
+            <property name="rightMargin">
+             <number>0</number>
+            </property>
+            <property name="bottomMargin">
+             <number>0</number>
+            </property>
+            <item>
+             <widget class="QFreqLinesChart" name="phaseChartWgt" native="true"/>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_11" native="true">
+              <property name="sizePolicy">
+               <sizepolicy hsizetype="Fixed" vsizetype="Preferred">
+                <horstretch>0</horstretch>
+                <verstretch>0</verstretch>
+               </sizepolicy>
+              </property>
+              <layout class="QGridLayout" name="gridLayout_5">
+               <item row="0" column="0">
+                <widget class="QPushButton" name="phase_line_btn_1">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="0" column="1">
+                <widget class="QCheckBox" name="phase_line_1">
+                 <property name="enabled">
+                  <bool>false</bool>
+                 </property>
+                 <property name="text">
+                  <string>Line 1</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="0">
+                <widget class="QPushButton" name="phase_line_btn_2">
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="1" column="1">
+                <widget class="QCheckBox" name="phase_line_2">
+                 <property name="text">
+                  <string>Line 2</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="0">
+                <widget class="QPushButton" name="phase_line_btn_3">
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="2" column="1">
+                <widget class="QCheckBox" name="phase_line_3">
+                 <property name="text">
+                  <string>Line 3</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="0">
+                <widget class="QPushButton" name="phase_line_btn_4">
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="3" column="1">
+                <widget class="QCheckBox" name="phase_line_4">
+                 <property name="text">
+                  <string>Line 4</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="0">
+                <widget class="QPushButton" name="phase_line_btn_5">
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="4" column="1">
+                <widget class="QCheckBox" name="phase_line_5">
+                 <property name="text">
+                  <string>Line 5</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="0">
+                <widget class="QPushButton" name="phase_line_btn_6">
+                 <property name="minimumSize">
+                  <size>
+                   <width>23</width>
+                   <height>23</height>
+                  </size>
+                 </property>
+                 <property name="maximumSize">
+                  <size>
+                   <width>23</width>
+                   <height>16777215</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>S</string>
+                 </property>
+                </widget>
+               </item>
+               <item row="5" column="1">
+                <widget class="QCheckBox" name="phase_line_6">
+                 <property name="text">
+                  <string>运算线段</string>
+                 </property>
+                 <property name="checked">
+                  <bool>true</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="6" column="0" colspan="2">
+                <widget class="QCheckBox" name="phase_line_FF">
+                 <property name="text">
+                  <string>显示FF</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="7" column="0" colspan="2">
+                <widget class="QCheckBox" name="phase_line_FB">
+                 <property name="text">
+                  <string>显示FB</string>
+                 </property>
+                 <property name="checked">
+                  <bool>false</bool>
+                 </property>
+                </widget>
+               </item>
+               <item row="8" column="0" colspan="2">
+                <widget class="QPushButton" name="phaseChart_btn_conf">
+                 <property name="minimumSize">
+                  <size>
+                   <width>0</width>
+                   <height>28</height>
+                  </size>
+                 </property>
+                 <property name="text">
+                  <string>PHASE配置</string>
+                 </property>
+                </widget>
+               </item>
+              </layout>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+  <action name="actOpen">
+   <property name="text">
+    <string>打开</string>
+   </property>
+   <property name="toolTip">
+    <string>打开文件</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="actConfIO">
+   <property name="text">
+    <string>设置IO</string>
+   </property>
+   <property name="toolTip">
+    <string>设置IO</string>
+   </property>
+  </action>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>QFreqLinesChart</class>
+   <extends>QWidget</extends>
+   <header>..\common\customplot\QFreqLinesChart.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

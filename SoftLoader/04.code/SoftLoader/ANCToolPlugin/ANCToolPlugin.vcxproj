@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{6F1EF504-3C85-4E57-AB01-16712F6543EF}</ProjectGuid>
+    <Keyword>QtVS_v304</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
+    <QtInstall>msvc2017</QtInstall>
+    <QtModules>core;gui;multimedia;printsupport;serialport;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
+    <QtInstall>msvc2017</QtInstall>
+    <QtModules>core;gui;multimedia;printsupport;serialport;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(QtMsBuild)\Qt.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <OutDir>..\Bind\Plugin</OutDir>
+    <IntDir>..\temp\plugin\$(ProjectName)</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <OutDir>..\Bin\Plugin</OutDir>
+    <IntDir>..\temp\Plugin\$(ProjectName)</IntDir>
+    <ExecutablePath>..\Bin;$(ExecutablePath)</ExecutablePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <ImportLibrary>..\PluginLib\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <ImportLibrary>..\PluginLib\$(TargetName).lib</ImportLibrary>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>ANCTOOLPLUGIN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <PreprocessorDefinitions>ANCTOOLPLUGIN_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\3rd\math\basic\skv_ulity.cpp" />
+    <ClCompile Include="..\3rd\math\math\kiss_fft.c" />
+    <ClCompile Include="..\3rd\math\math\kiss_fftr.c" />
+    <ClCompile Include="..\3rd\math\math\kiss_fftr_fix.c" />
+    <ClCompile Include="..\3rd\math\math\kiss_fft_fix.c" />
+    <ClCompile Include="..\3rd\math\math\map.c" />
+    <ClCompile Include="..\3rd\math\math\skv_fastmath.c" />
+    <ClCompile Include="..\3rd\math\math\skv_fftwrap.c" />
+    <ClCompile Include="..\3rd\math\math\skv_fftwrap_fix.c" />
+    <ClCompile Include="..\3rd\math\math\skv_math.c" />
+    <ClCompile Include="..\3rd\math\math\smallft.c" />
+    <ClCompile Include="..\3rd\math\skv\skv_preprocess.cpp" />
+    <ClCompile Include="..\3rd\math\waveAlgorithm\skv_wolf_function.c" />
+    <ClCompile Include="..\common\datastruct\FrequencySpectrum.cpp" />
+    <ClCompile Include="ANCSoft.cpp" />
+    <ClCompile Include="CalcWgt.cpp" />
+    <ClCompile Include="Config.cpp" />
+    <ClCompile Include="LinkDlg.cpp" />
+    <ClCompile Include="QConfAudioDlg.cpp" />
+    <ClCompile Include="QConfigAxisDlg.cpp" />
+    <ClCompile Include="QConfigIO.cpp" />
+    <ClCompile Include="QConfLineColorDlg.cpp" />
+    <ClCompile Include="QWaveFilterDlg.cpp" />
+    <ClCompile Include="RealTimeEngine.cpp" />
+    <ClCompile Include="SpectrumAnalyser.cpp" />
+    <ClCompile Include="WaveChart.cpp" />
+    <ClCompile Include="WavFile.cpp" />
+    <QtMoc Include="SpectrumAnalyser.h" />
+    <QtMoc Include="QConfigAxisDlg.h" />
+    <QtMoc Include="WaveChart.h" />
+    <QtMoc Include="CalcWgt.h" />
+    <ClInclude Include="..\3rd\math\basic\os_support.h" />
+    <ClInclude Include="..\3rd\math\basic\skv_config.h" />
+    <ClInclude Include="..\3rd\math\basic\skv_fixed.h" />
+    <ClInclude Include="..\3rd\math\basic\skv_info.h" />
+    <ClInclude Include="..\3rd\math\basic\skv_types.h" />
+    <ClInclude Include="..\3rd\math\basic\skv_ulity.h" />
+    <ClInclude Include="..\3rd\math\math\fixed_generic.h" />
+    <ClInclude Include="..\3rd\math\math\kiss_fft.h" />
+    <ClInclude Include="..\3rd\math\math\kiss_fftr.h" />
+    <ClInclude Include="..\3rd\math\math\kiss_fftr_fix.h" />
+    <ClInclude Include="..\3rd\math\math\kiss_fft_fix.h" />
+    <ClInclude Include="..\3rd\math\math\map.h" />
+    <ClInclude Include="..\3rd\math\math\math_approx.h" />
+    <ClInclude Include="..\3rd\math\math\math_approx_fix.h" />
+    <ClInclude Include="..\3rd\math\math\skv_fastmath.h" />
+    <ClInclude Include="..\3rd\math\math\skv_fftwrap.h" />
+    <ClInclude Include="..\3rd\math\math\skv_fftwrap_fix.h" />
+    <ClInclude Include="..\3rd\math\math\skv_math.h" />
+    <ClInclude Include="..\3rd\math\math\skv_math_core.h" />
+    <ClInclude Include="..\3rd\math\math\skv_math_core_fix.h" />
+    <ClInclude Include="..\3rd\math\math\smallft.h" />
+    <ClInclude Include="..\3rd\math\math\_kiss_fft_guts.h" />
+    <ClInclude Include="..\3rd\math\math\_kiss_fft_guts_fix.h" />
+    <ClInclude Include="..\3rd\math\skv\FFTHeader.h" />
+    <ClInclude Include="..\3rd\math\skv\skv_preprocess.h" />
+    <ClInclude Include="..\3rd\math\waveAlgorithm\skv_wolf_function.h" />
+    <ClInclude Include="..\common\datastruct\DataStruct_anc_eq.h" />
+    <ClInclude Include="..\common\datastruct\FrequencySpectrum.h" />
+    <QtMoc Include="LinkDlg.h" />
+    <ClInclude Include="WavFile.h" />
+    <QtMoc Include="RealTimeEngine.h" />
+    <QtMoc Include="QConfAudioDlg.h" />
+    <QtMoc Include="QConfigIO.h" />
+    <QtMoc Include="ANCSoft.h" />
+    <ClInclude Include="Config.h" />
+    <QtMoc Include="QConfLineColorDlg.h" />
+    <QtMoc Include="QWaveFilterDlg.h" />
+    <QtMoc Include="ANCTool.h" />
+    <QtMoc Include="..\common\serialport\HandleCom.h" />
+    <QtMoc Include="..\common\serialport\SerialPortDlg.h" />
+    <QtMoc Include="..\common\customplot\QAbstractDynamicLinesChart.h" />
+    <QtMoc Include="..\common\customplot\qcustomplot.h" />
+    <QtMoc Include="..\common\customplot\QFreqLinesChart.h" />
+    <ClInclude Include="..\common\customplot\Utility.h" />
+    <ClInclude Include="anctoolplugin_global.h" />
+    <QtMoc Include="ANCToolPlugin.h" />
+    <ClCompile Include="..\common\customplot\QAbstractDynamicLinesChart.cpp" />
+    <ClCompile Include="..\common\customplot\qcustomplot.cpp" />
+    <ClCompile Include="..\common\customplot\QFreqLinesChart.cpp" />
+    <ClCompile Include="..\common\customplot\Utility.cpp" />
+    <ClCompile Include="..\common\serialport\HandleCom.cpp" />
+    <ClCompile Include="..\common\serialport\SerialPortDlg.cpp" />
+    <ClCompile Include="ANCTool.cpp" />
+    <ClCompile Include="ANCToolPlugin.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="..\common\serialport\SerialPortDlg.ui" />
+    <QtUic Include="ANCSoft.ui" />
+    <QtUic Include="ANCTool.ui" />
+    <QtUic Include="CalcWgt.ui" />
+    <QtUic Include="LinkDlg.ui" />
+    <QtUic Include="QConfAudioDlg.ui" />
+    <QtUic Include="QConfigAxisDlg.ui" />
+    <QtUic Include="QConfigIO.ui" />
+    <QtUic Include="QConfLineColorDlg.ui" />
+    <QtUic Include="QWaveFilterDlg.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="Resource.qrc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

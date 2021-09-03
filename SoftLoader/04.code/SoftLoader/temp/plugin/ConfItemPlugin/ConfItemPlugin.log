@@ -1,0 +1,19 @@
+﻿D:\software\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Intermediate 目录。
+D:\software\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  Reading Qt configuration (D:/software/Qt5.14.1/5.14.1/msvc2017/bin/qmake)
+D:\software\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(376,5): warning MSB8004: Intermediate 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Intermediate 目录。
+D:\software\vs\Common7\IDE\VC\VCTargets\Microsoft.CppBuild.targets(377,5): warning MSB8004: Output 目录未以斜杠结尾。  此生成实例将添加斜杠，因为必须有这个斜杠才能正确计算 Output 目录。
+  uic ConfItemWgt.ui
+  rcc Resource.qrc
+  moc QMacLineEdit.h
+  moc ConfItemWgt.h
+  moc ConfItemPlugin.h
+  ConfItemPlugin.cpp
+  ConfItemWgt.cpp
+  QMacLineEdit.cpp
+  qrc_Resource.cpp
+  moc_QMacLineEdit.cpp
+  moc_ConfItemWgt.cpp
+  moc_ConfItemPlugin.cpp
+    正在创建库 ..\PluginLib\ConfItemPlugin.lib 和对象 ..\PluginLib\ConfItemPlugin.exp
+  ConfItemPlugin.vcxproj -> D:\workSVN\trunk\code\tools_pc\SoftLoader\04.code\SoftLoader\ConfItemPlugin\..\Bin\Plugin\ConfItemPlugin.dll

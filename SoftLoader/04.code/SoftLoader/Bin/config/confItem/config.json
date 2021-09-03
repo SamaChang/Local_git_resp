@@ -1,0 +1,30 @@
+{
+    "bluetooth": {
+        "bluetooth_mac_addr_1": 170,
+        "bluetooth_mac_addr_2": 187,
+        "bluetooth_mac_addr_3": 204,
+        "bluetooth_mac_addr_4": 221,
+        "bluetooth_mac_addr_5": 238,
+        "bluetooth_mac_addr_6": 255,
+        "bluetooth_name": "Tsingmicro",
+        "bluetooth_send_freq": 4,
+        "bluetooth_tm": 5
+    },
+    "charge": {
+        "charge_current": 15,
+        "charge_full_current": 10,
+        "charge_full_voltage": 4.202,
+        "low_shut_down": 3.4,
+        "low_voltage_tips": 3.4
+    },
+    "key": {
+        "key_fun_id_1": 1,
+        "key_fun_id_2": 2,
+        "key_fun_id_3": 3,
+        "sum": 3
+    },
+    "volume": {
+        "volume_default": 3,
+        "volume_tips": 12
+    }
+}
