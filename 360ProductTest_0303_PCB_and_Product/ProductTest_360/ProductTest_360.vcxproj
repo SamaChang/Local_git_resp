@@ -1,0 +1,237 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CC6C7F9E-F65A-491F-88D1-0BB5C9982697}</ProjectGuid>
+    <Keyword>QtVS_v303</Keyword>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <WindowsTargetPlatformVersion Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">10.0.17763.0</WindowsTargetPlatformVersion>
+    <QtMsBuild Condition="'$(QtMsBuild)'=='' OR !Exists('$(QtMsBuild)\qt.targets')">$(MSBuildProjectDirectory)\QtMsBuild</QtMsBuild>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v141</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <Target Name="QtMsBuildNotFound" BeforeTargets="CustomBuild;ClCompile" Condition="!Exists('$(QtMsBuild)\qt.targets') or !Exists('$(QtMsBuild)\qt.props')">
+    <Message Importance="High" Text="QtMsBuild: could not locate qt.targets, qt.props; project may not build correctly." />
+  </Target>
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt_defaults.props')">
+    <Import Project="$(QtMsBuild)\qt_defaults.props" />
+  </ImportGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'">
+    <IncludePath>D:\software\LibUSB\libusb-win32-bin-1.2.6.0\libusb-win32-bin-1.2.6.0\include;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\software\LibUSB\libusb-win32-bin-1.2.6.0\libusb-win32-bin-1.2.6.0\lib\msvc;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\lib\msc;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'">
+    <IncludePath>D:\software\LibUSB\libusb-win32-bin-1.2.6.0\libusb-win32-bin-1.2.6.0\include;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\Include;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\software\LibUSB\libusb-win32-bin-1.2.6.0\libusb-win32-bin-1.2.6.0\lib\msvc;C:\Program Files (x86)\IVI Foundation\VISA\WinNT\lib\msc;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Link>
+      <AdditionalDependencies>libusb.lib;visa32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Link>
+      <AdditionalDependencies>libusb.lib;visa32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="QtSettings">
+    <QtInstall>msvc2017</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>debug</QtBuildConfig>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="QtSettings">
+    <QtInstall>msvc2017</QtInstall>
+    <QtModules>core;gui;network;widgets</QtModules>
+    <QtBuildConfig>release</QtBuildConfig>
+  </PropertyGroup>
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.props')">
+    <Import Project="$(QtMsBuild)\qt.props" />
+  </ImportGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <Optimization>Disabled</Optimization>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)' == 'Release|Win32'" Label="Configuration">
+    <ClCompile>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <Optimization>MaxSpeed</Optimization>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="BlueTooth.cpp" />
+    <ClCompile Include="BTAndWifi.cpp" />
+    <ClCompile Include="CameraTest.cpp" />
+    <ClCompile Include="common.cpp" />
+    <ClCompile Include="DataCode.cpp" />
+    <ClCompile Include="GPIO.cpp" />
+    <ClCompile Include="IRLamp.cpp" />
+    <ClCompile Include="LCD.cpp" />
+    <ClCompile Include="LED.cpp" />
+    <ClCompile Include="MicAndSpeaker.cpp" />
+    <ClCompile Include="NetWork.cpp" />
+    <ClCompile Include="packet.cpp" />
+    <ClCompile Include="PreventRemove.cpp" />
+    <ClCompile Include="RTC.cpp" />
+    <ClCompile Include="RunA.cpp" />
+    <ClCompile Include="Sensor.cpp" />
+    <ClCompile Include="SN.cpp" />
+    <ClCompile Include="SNInformation.cpp" />
+    <ClCompile Include="TCP.cpp" />
+    <ClCompile Include="Uart.cpp" />
+    <ClCompile Include="usb.cpp" />
+    <ClCompile Include="UsbPro.cpp" />
+    <ClCompile Include="Warn.cpp" />
+    <ClCompile Include="Wgen.cpp" />
+    <QtRcc Include="ProductTest_360.qrc" />
+    <QtUic Include="BlueTooth.ui" />
+    <QtUic Include="BTAndWifi.ui" />
+    <QtUic Include="CameraTest.ui" />
+    <QtUic Include="ChoosePro.ui" />
+    <QtUic Include="DataCode.ui" />
+    <QtUic Include="DeviceInformation.ui" />
+    <QtUic Include="downA.ui" />
+    <QtUic Include="GPIO.ui" />
+    <QtUic Include="IRLamp.ui" />
+    <QtUic Include="LCD.ui" />
+    <QtUic Include="LED.ui" />
+    <QtUic Include="MicAndSpeaker.ui" />
+    <QtUic Include="NetWork.ui" />
+    <QtUic Include="PreventRemove.ui" />
+    <QtUic Include="ProductTest_360.ui" />
+    <QtMoc Include="ProductTest_360.h" />
+    <ClCompile Include="ChoosePro.cpp" />
+    <ClCompile Include="DeviceInformation.cpp" />
+    <ClCompile Include="downA.cpp" />
+    <ClCompile Include="ProductTest_360.cpp" />
+    <ClCompile Include="main.cpp" />
+    <QtUic Include="RTC.ui" />
+    <QtUic Include="RunA.ui" />
+    <QtUic Include="Sensor.ui" />
+    <QtUic Include="SN.ui" />
+    <QtUic Include="SNInformation.ui" />
+    <QtUic Include="Uart.ui" />
+    <QtUic Include="UsbPro.ui" />
+    <QtUic Include="Warn.ui" />
+    <QtUic Include="Wgen.ui" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ChoosePro.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="DeviceInformation.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="downA.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="RunA.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="SN.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="CameraTest.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="LED.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="BTAndWifi.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="Sensor.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="MicAndSpeaker.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="NetWork.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="DataCode.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="PreventRemove.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="BlueTooth.h" />
+    <ClInclude Include="common.h" />
+    <ClInclude Include="def.h" />
+    <QtMoc Include="UsbPro.h" />
+    <QtMoc Include="Wgen.h" />
+    <QtMoc Include="Warn.h" />
+    <QtMoc Include="LCD.h" />
+    <QtMoc Include="IRLamp.h" />
+    <QtMoc Include="GPIO.h" />
+    <ClInclude Include="packet.h" />
+    <QtMoc Include="Uart.h" />
+    <QtMoc Include="SNInformation.h" />
+    <QtMoc Include="TCP.h" />
+    <ClInclude Include="resource.h" />
+    <QtMoc Include="RTC.h" />
+    <ClInclude Include="usb.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Button.qss" />
+    <None Include="Button_Small.qss" />
+    <None Include="CheckBox.qss" />
+    <None Include="Right.qss" />
+    <None Include="Wrong.qss" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="20201121.ico" />
+    <Image Include="Logo.png" />
+    <Image Include="Tip.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="ProductTest_360.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Condition="Exists('$(QtMsBuild)\qt.targets')">
+    <Import Project="$(QtMsBuild)\qt.targets" />
+  </ImportGroup>
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,35 @@
+QCheckBox{
+	/*font: 9pt "Arial";*/
+/*背景色*/
+/*background-color: rgba(255, 170, 0, 150);*/
+background-color: rgba(0, 170, 255, 150);
+/*边框样式*/
+border-style: outset;
+/*边框宽度为4像素*/
+border-width: 3px;
+/*边框圆角半径*/
+border-radius: 6px;
+/*边框颜色*/
+border-color: rgba(255, 225, 255, 30);
+/*字体*/
+font: regular 3px;
+/*字体颜色*/
+color:rgba(0, 0, 0, 100);
+/*填衬*/
+padding: 6px;
+}
+
+/*鼠标悬停在按钮上时*/
+QCheckBox:hover{
+background-color:rgba(100,255,100, 100);
+border-color: rgba(255, 225, 255, 200);
+color:rgba(0, 0, 0, 200);
+}
+
+/*按钮被按下时*/
+QCheckBox:pressed {
+background-color:rgba(100,255,100, 200);
+border-color: rgba(255, 225, 255, 30);
+border-style: inset;
+color:rgba(0, 0, 0, 100);
+}
