@@ -1,0 +1,35 @@
+QGroupBox {
+    /* 背景渐变色*/
+    background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #E0E0E0, stop: 1 #FFFFFF);
+
+    /* 边框 */
+    /*border: 2px solid black;*/
+    border-color: rgba(0, 0, 255, 255);
+
+    /* 倒角 */
+    border-radius: 5px;
+
+    /* 就像墙上挂着的两个相框,margin指的是相框与相框的距离
+       padding指的是每个相框里照片与相框边框的距离 */
+    margin-top: 20px;
+}
+
+/* 标题设置 */
+QGroupBox::title {
+    /* 位置 */
+    subcontrol-origin: margin;
+    subcontrol-position: top center;
+
+    /* 内边框,上下和左右 */
+    padding: 10px 15px;
+
+    /* 颜色 */
+    /*background-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                                      stop: 0 #FF0ECE, stop: 1 #FFFFFF);*/
+}
+
+QGroupBox::indicator {
+    width: 13px;
+    height: 13px;
+}
