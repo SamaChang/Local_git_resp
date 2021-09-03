@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Wgen</class>
+ <widget class="QWidget" name="Wgen">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Wgen</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(238, 255, 250, 200);</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>250</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>通过</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>250</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>失败</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>60</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>韦根测试</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>130</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>干接点测试</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>30</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:10.5pt; font-weight:600;&quot;&gt;测试步骤:&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;PC通过&lt;/span&gt;&lt;span style=&quot; font-family:'宋体','Calibri';&quot;&gt;RS232&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;转韦根模块儿与夹具韦根接口连接，点击测试进行韦根输出数据通信；&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:10.5pt; font-weight:600;&quot;&gt;判定：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:10.5pt;&quot;&gt;可以正常收到韦根接口数据则自动判定为 Pass；否则为Fail。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	image: url(:/ProductTest_360/Tip.jpg);
+border-style: outset;
+border-width: 4px;
+border-radius: 10px;
+border-color: rgba(255, 170, 0, 30);
+}
+QLabel:hover{
+background-color:rgba(100,255,100, 100);
+border-color: rgba(255, 170, 0, 255);
+color:rgba(0, 0, 0, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ProductTest_360.qrc"/>
+ </resources>
+ <connections/>
+</ui>

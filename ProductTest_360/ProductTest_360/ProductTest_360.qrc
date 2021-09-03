@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="ProductTest_360">
+    <file>Tip.jpg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1145
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ProductTest_360", "ProductTest_360\ProductTest_360.vcxproj", "{CC6C7F9E-F65A-491F-88D1-0BB5C9982697}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CC6C7F9E-F65A-491F-88D1-0BB5C9982697}.Debug|x86.ActiveCfg = Debug|Win32
+		{CC6C7F9E-F65A-491F-88D1-0BB5C9982697}.Debug|x86.Build.0 = Debug|Win32
+		{CC6C7F9E-F65A-491F-88D1-0BB5C9982697}.Release|x86.ActiveCfg = Release|Win32
+		{CC6C7F9E-F65A-491F-88D1-0BB5C9982697}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		Qt5Version = msvc2017
+		SolutionGuid = {93A4884A-9CF2-46D9-805F-34E5FD64FDB8}
+	EndGlobalSection
+EndGlobal

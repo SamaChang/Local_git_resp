@@ -1,0 +1,20 @@
+QCheckBox{
+	/*font: 9pt "Arial";*/
+/*背景色*/
+/*background-color: rgba(255, 170, 0, 150);*/
+background-color: rgba(255,0,0,255)；
+/*边框样式*/
+border-style: outset;
+/*边框宽度为4像素*/
+border-width: 3px;
+/*边框圆角半径*/
+border-radius: 6px;
+/*边框颜色*/
+border-color: rgba(255, 225, 255, 30);
+/*字体*/
+font: regular 3px;
+/*字体颜色*/
+color:rgba(0, 0, 0, 100);
+/*填衬*/
+padding: 6px;
+}

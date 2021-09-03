@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BTAndWifi</class>
+ <widget class="QWidget" name="BTAndWifi">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BTAndWifi</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(238, 255, 250, 200);</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>250</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>通过</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>250</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>失败</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>搜索蓝牙设备</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Wifi搜索</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>30</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:10.5pt; font-weight:600;&quot;&gt;测试步骤：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;蓝牙测试步骤：蓝牙主动搜索其他设备，如果搜索到，内容显示在屏幕或者上位机。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;Wifi测试步骤：&lt;/span&gt;&lt;span style=&quot; font-family:'Calibri';&quot;&gt; Wifi搜索并连接，显示连接ap的信号强度&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:10.5pt; font-weight:600;&quot;&gt;判定：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;上位机分别收到蓝牙连接成功指令、Wifi连接成功指令自动判定为 &lt;/span&gt;&lt;span style=&quot; font-family:'宋体','Calibri';&quot;&gt;Pass &lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	image: url(:/ProductTest_360/Tip.jpg);
+border-style: outset;
+border-width: 4px;
+border-radius: 10px;
+border-color: rgba(255, 170, 0, 30);
+}
+QLabel:hover{
+background-color:rgba(100,255,100, 100);
+border-color: rgba(255, 170, 0, 255);
+color:rgba(0, 0, 0, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ProductTest_360.qrc"/>
+ </resources>
+ <connections/>
+</ui>

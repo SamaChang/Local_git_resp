@@ -1,0 +1,268 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <QtRcc Include="ProductTest_360.qrc">
+      <Filter>Resource Files</Filter>
+    </QtRcc>
+    <QtMoc Include="ProductTest_360.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <ClCompile Include="ProductTest_360.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ChoosePro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DeviceInformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="downA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RunA.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SN.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CameraTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LED.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BTAndWifi.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sensor.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MicAndSpeaker.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="NetWork.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DataCode.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="PreventRemove.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="usb.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="packet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="common.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LCD.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Warn.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Wgen.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="UsbPro.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Uart.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="SNInformation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <QtMoc Include="ChoosePro.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="DeviceInformation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="downA.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="RunA.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SN.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="CameraTest.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="LED.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="BTAndWifi.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Sensor.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="MicAndSpeaker.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="NetWork.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="DataCode.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="PreventRemove.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="LCD.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Warn.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Wgen.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="UsbPro.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="Uart.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+    <QtMoc Include="SNInformation.h">
+      <Filter>Header Files</Filter>
+    </QtMoc>
+  </ItemGroup>
+  <ItemGroup>
+    <QtUic Include="ChoosePro.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="ProductTest_360.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="DeviceInformation.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="downA.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="RunA.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="SN.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="CameraTest.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="LED.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="BTAndWifi.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Sensor.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="MicAndSpeaker.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="NetWork.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="DataCode.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="PreventRemove.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="LCD.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Warn.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Wgen.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="UsbPro.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="Uart.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+    <QtUic Include="SNInformation.ui">
+      <Filter>Form Files</Filter>
+    </QtUic>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="usb.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="packet.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="def.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Button.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Button_Small.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="CheckBox.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Right.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="Wrong.qss">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Logo.png">
+      <Filter>Resource Files</Filter>
+    </Image>
+    <Image Include="Tip.jpg">
+      <Filter>Resource Files</Filter>
+    </Image>
+  </ItemGroup>
+</Project>

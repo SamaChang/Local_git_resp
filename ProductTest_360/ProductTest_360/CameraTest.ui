@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CameraTest</class>
+ <widget class="QWidget" name="CameraTest">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CameraTest</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(238, 255, 250, 200);</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>250</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>通过</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>250</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>失败</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>50</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>RGB Camera</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>120</y>
+     <width>101</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>IR Camera</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>30</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:10.5pt; font-weight:600;&quot;&gt;测试步骤：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;RGB Camera测试：在弹出框中点击RGB camera测试，观察屏幕显示正常后点击通过或失败。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;IR Camera测试：在弹出框中点击IR camera测试，观察屏幕显示正常后点击通过或失败。打开手机照相机查看红外灯是否打开。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:11pt; font-weight:600;&quot;&gt;判定：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;RGB Camera图像显示正常手动判定为 &lt;/span&gt;&lt;span style=&quot; font-family:'宋体','Calibri';&quot;&gt;Pass ，否则为Fail。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;IR Camera图像显示正常&lt;/span&gt;&lt;span style=&quot; font-family:'宋体','Calibri';&quot;&gt;并且红外灯打开&lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;手动判定为 &lt;/span&gt;&lt;span style=&quot; font-family:'宋体','Calibri';&quot;&gt;Pass ，否则为Fail。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	image: url(:/ProductTest_360/Tip.jpg);
+border-style: outset;
+border-width: 4px;
+border-radius: 10px;
+border-color: rgba(255, 170, 0, 30);
+}
+QLabel:hover{
+background-color:rgba(100,255,100, 100);
+border-color: rgba(255, 170, 0, 255);
+color:rgba(0, 0, 0, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ProductTest_360.qrc"/>
+ </resources>
+ <connections/>
+</ui>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>LED</class>
+ <widget class="QWidget" name="LED">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>LED</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgba(238, 255, 250, 200);</string>
+  </property>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>210</x>
+     <y>242</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>通过</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_2">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>242</y>
+     <width>75</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>失败</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_3">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>40</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*background-color: rgb(255, 255, 255);*/
+QPushButton{
+/*背景色*/
+/*background-color: rgba(100, 225, 100, 30);*/
+/*background-color: rgb(85, 85, 255);*/
+background-color: rgb(255, 255, 255, 150);
+/*边框样式*/
+border-style: outset;
+/*边框宽度为4像素*/
+border-width: 4px;
+/*边框圆角半径*/
+border-radius: 10px;
+/*边框颜色*/
+border-color: rgba(255, 225, 255, 30);
+/*字体*/
+font: bold 14px;
+/*字体颜色*/
+color:rgba(0, 0, 0, 100);
+/*填衬*/
+padding: 6px;
+}
+
+/*鼠标悬停在按钮上时*/
+QPushButton:hover{
+background-color:rgba(100,255,100, 100);
+border-color: rgba(255, 225, 255, 200);
+color:rgba(0, 0, 0, 200);
+}
+
+/*按钮被按下时*/
+QPushButton:pressed {
+background-color:rgba(100,255,100, 200);
+border-color: rgba(255, 225, 255, 30);
+border-style: inset;
+color:rgba(0, 0, 0, 100);
+}</string>
+   </property>
+   <property name="text">
+    <string>白灯</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_4">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>90</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*background-color: rgb(255, 0, 0);*/
+/*background-color: rgb(255, 255, 255);*/
+QPushButton{
+/*背景色*/
+/*background-color: rgba(100, 225, 100, 30);*/
+/*background-color: rgb(85, 85, 255);*/
+background-color: rgb(255, 0, 0, 150);
+/*边框样式*/
+border-style: outset;
+/*边框宽度为4像素*/
+border-width: 4px;
+/*边框圆角半径*/
+border-radius: 10px;
+/*边框颜色*/
+border-color: rgba(255, 225, 255, 30);
+/*字体*/
+font: bold 14px;
+/*字体颜色*/
+color:rgba(0, 0, 0, 100);
+/*填衬*/
+padding: 6px;
+}
+
+/*鼠标悬停在按钮上时*/
+QPushButton:hover{
+background-color:rgba(100,255,100, 100);
+border-color: rgba(255, 225, 255, 200);
+color:rgba(0, 0, 0, 200);
+}
+
+/*按钮被按下时*/
+QPushButton:pressed {
+background-color:rgba(100,255,100, 200);
+border-color: rgba(255, 225, 255, 30);
+border-style: inset;
+color:rgba(0, 0, 0, 100);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>红灯</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton_5">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>140</y>
+     <width>81</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">/*background-color: rgb(0, 255, 0);*/
+/*background-color: rgb(255, 0, 0);*/
+/*background-color: rgb(255, 255, 255);*/
+QPushButton{
+/*背景色*/
+/*background-color: rgba(100, 225, 100, 30);*/
+/*background-color: rgb(85, 85, 255);*/
+background-color: rgb(0, 255, 0, 150);
+/*边框样式*/
+border-style: outset;
+/*边框宽度为4像素*/
+border-width: 4px;
+/*边框圆角半径*/
+border-radius: 10px;
+/*边框颜色*/
+border-color: rgba(255, 225, 255, 30);
+/*字体*/
+font: bold 14px;
+/*字体颜色*/
+color:rgba(0, 0, 0, 100);
+/*填衬*/
+padding: 6px;
+}
+
+/*鼠标悬停在按钮上时*/
+QPushButton:hover{
+background-color:rgba(100,255,100, 100);
+border-color: rgba(255, 225, 255, 200);
+color:rgba(0, 0, 0, 200);
+}
+
+/*按钮被按下时*/
+QPushButton:pressed {
+background-color:rgba(100,255,100, 200);
+border-color: rgba(255, 225, 255, 30);
+border-style: inset;
+color:rgba(0, 0, 0, 100);
+}
+
+</string>
+   </property>
+   <property name="text">
+    <string>绿灯</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>30</y>
+     <width>31</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:10.5pt; font-weight:600;&quot;&gt;测试步骤：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;弹出框中点击WRG灯测试，观察点亮是否正常，点击通过或失败。&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体'; font-size:10.5pt; font-weight:600;&quot;&gt;判定：&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;WRG LED点亮正常手动判定为 &lt;/span&gt;&lt;span style=&quot; font-family:'宋体','Calibri';&quot;&gt;Pass &lt;/span&gt;&lt;span style=&quot; font-family:'宋体';&quot;&gt;。&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QLabel{
+	image: url(:/ProductTest_360/Tip.jpg);
+border-style: outset;
+border-width: 4px;
+border-radius: 10px;
+border-color: rgba(255, 170, 0, 30);
+}
+QLabel:hover{
+background-color:rgba(100,255,100, 100);
+border-color: rgba(255, 170, 0, 255);
+color:rgba(0, 0, 0, 255);
+}</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="ProductTest_360.qrc"/>
+ </resources>
+ <connections/>
+</ui>
